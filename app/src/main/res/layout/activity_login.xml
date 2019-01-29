@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="28dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/no_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/phone"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="+62"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="Masukan nomor anda"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="197dp"
+        android:layout_toRightOf="@+id/no_id"
+        android:digits="0123456789"
+        android:hint="Nomor Telepon"
+        android:inputType="phone" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="162dp"
+        android:gravity="center"
+        android:text="Lanjut"
+        android:id="@+id/buttonlanjut"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#cdd8f1"/>
+
+</RelativeLayout>
